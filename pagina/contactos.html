@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <a name="top"> </a>
+   <header>
+
+    </header>
+
+    
+    <div class="ms-0 m-0">
+      <nav class="navbar navbar-expand-lg navbar-light  nav-primera "> <!--saque el bg- light para darle el color q quiero y agregue la clase nav-primera para darle estilo en css-->
+      
+        <div class="container-fluid ">
+          <a class="navbar-brand" href=""><img src="../imagen/logo1.jpg" alt="Logo" width="50%"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-start" id="navbarNav"> <!--agrego justifi-->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Principal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pagina/recursos.html">Nutricion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pagina/contactos.html">Contacto</a>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    </div>
+
+
+    
+
+    <div class="contac">
+    <h2>Contactanos</h2>
+    <p>Completa tus datos y nos contactaremos. Si tienes una receta de tradicion familiar, enviala  para participar del concurso "Publicamos tu receta",las bases del mismo te las enviaremos por mail.</p>
+    </div>
+
+    <div class="container">
+ <form class="row g-3 mt-3" action="enviar.php" method="post" enctype="" >
+
+<div class="col-12"> <!--spam se agrega para q el campo sea obligatorio >*<-->
+    <label for="nombreUsuario" class="form-label"style="margin: 0; padding: 0;">Nombre:<span>*</span></label>
+  <input type="text " class="form-control" id="inputNombre" placeholder="Escribe tu nombre"style="margin: 0; padding: 0;" >
+
+</div>
+<div class="col-12">
+    <label for="apellidoUsuario" class="form-label"style="margin: 0; padding: 0;" >Apellido:<span>*</span></label>
+    <input type="text " class="form-control" id="inputApellido" placeholder="Escribe tu apellido"style="margin: 0; padding: 0;" >
+
+</div>
+
+<div class="col 6">
+    <label for="DateUsuario" class="form-label"style="margin: 0; padding: 0;">Fecha de nacimiento:</label>
+  <input type="date" class="form-control" id="inputDate"style="margin: 0; padding: 0;">
+
+</div>
+<div class="col-6 ">
+    <label for="numUsuario" class="form-label"style="margin: 0; padding: 0;">Edad:</label>
+    <input type="number" class="form-control" id="inputnum" style="margin: 0; padding: 0;">
+</div>
+
+<div class="col-6">
+<label for="mailUsuario" class="for-label" style="margin: 0; padding: 0;">E-Mail:<span>*</span></label>
+  <input type="email" class="form-control" id="inputMail" placeholder=" Mail"style="margin: 0; padding: 0;" >
+</div>
+<div class="col-6">
+    <label for="passUsuario" class="form-label"style="margin: 0; padding: 0;" >Contraseña<span>*</span></label>
+    <input type="password" class="form-control" id="inputPass" placeholder=" Contraseña" style="margin: 0; padding: 0;">
+
+</div>
+
+<div class="col-12">
+<label for="imputAddress" class="form-label"style="margin: 0; padding: 0;">Direccion</label>
+<input type="text" class="form-control" id="imputAddress" placeholder=" Domicilio"style="margin: 0; padding: 0;" >
+</div>
+
+<div class="col-6">
+    <label for="cityInput" class="form-label"style="margin: 0; padding: 0;" >Ciudad</label>
+    <input type="text" class="form-control" id="cityInput" placeholder=" Ciudad"style="margin: 0; padding: 0;" >
+    </div>
+ <div class="col-3">
+    <label for="postalCodeInput" class="form-label"style="margin: 0; padding: 0;">Codigo Postal</label>
+    <input type="text" class="form-control" id="postalCodeInput" placeholder=" Codigo postal"style="margin: 0; padding: 0;">
+</div>
+
+<div class="col-3">
+    <label for="countryInput" class="form-label"style="margin: 0; padding: 0;">Pais</label>
+    <input type="text" class="form-control" id="countryInput" placeholder="Pais"style="margin: 0; padding: 0;">
+</div>
+
+ <!--</form>
+</div>-->
+
+
+<div class="row">
+<div class="col-3 custom-class">
+    <label for="formFile" class="form-label"style="margin: 0; padding: 0;">Envia tu receta</label>
+    <input class="form-control" type="file" id="formFile"style="margin: 0; padding: 0;">
+  </div>
+</div>
+
+<div class="row second-row">
+  <div class="col-3">
+    <div class="form-check">
+        <input type="checkbox" id="checkTerms" class="form-check-input">
+        <label for="checkTerms" class="form-check-label">Acepto los términos</label>
+    </div>
+</div>
+</div>
+</form>
+</div>
+
+<div class="col-3 ">
+    
+        <button type="submit" class="btn btn-secondary width-150 custom-button">Registrate</button>
+ 
+</div>
+
+</div>
+
+
+
+
+    
+    
+      <footer>
+         <a href="mailto:mar.rochy@gmail.com">Contáctame</a>
+       
+         <a href="#top">Ir al inicio de la página</a>
+           </footer>
+         
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+           integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+           crossorigin="anonymous"></script>     
+    
+</body>
+</html>
+
+
+
