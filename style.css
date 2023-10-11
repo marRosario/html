@@ -34,7 +34,7 @@ html{
 body{
  
   background-color: var(--colorfondo);
-  font-family : 'Montserrat', sans-serif;         /*'Roboto', sans-serif;*/
+  font-family : 'Montserrat', sans-serif;       
 }    
 
 header{
@@ -58,18 +58,91 @@ font-size: 20px;
 
   }
 
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .image-container {
+    flex: 1;
+  }
+  
+  .text-container {
+    flex: 1;
+  }
+  
+
   
   .texto2 p{
- margin-top: 5px;
-margin-left: 25px;
-text-align: justify;
-column-count: 1;
+  margin-top: 5px;
+  margin-left: 25px;
+  text-align: justify;
+  column-count: 1;
   }
 
 .btn{
 width: 560px;
 padding: 1px;
 }
+
+@media (max-width: 768px) {
+  .btn {
+    width: 100%; 
+  }
+
+  .img-fluid {
+    max-width: 100%; 
+  }
+}
+
+
+
+
+
+@media (max-width: 575px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container > div {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .texto2 {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .container > div {
+    width: calc(50% - 15px);
+  }
+  
+  .texto2 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .container > div {
+    width: auto;
+  }
+}
+
+
+
 
 
  /*estilos para los card*/
@@ -146,6 +219,45 @@ padding-top: 45px;
     }
 
  
+    @media (max-width: 575px) {
+      .flex-conteiner {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .parte1, .parte2 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+      }
+    }
+      
+    @media (min-width: 576px) and (max-width: 767px) {
+      .flex-conteiner {
+        justify-content: flex-start;
+      }
+      
+      .parte1, .parte2 {
+        width: calc(50% - 15px);
+        height: auto;
+      }
+    }
+      
+    @media (min-width: 768px) {
+      .flex-conteiner {
+        justify-content: center;
+      }
+      
+      .parte1, .parte2 {
+        width: 480px;
+        height: 330px;
+      }
+    }
+    
+
+
+
+
   ol{
     list-style-type: circle;
   }
@@ -275,6 +387,9 @@ margin-left: -2.3cm;
 
   nav{
     flex-direction: column;
+  }
+  nav a{
+    text-align: center;
   }
 }
 
