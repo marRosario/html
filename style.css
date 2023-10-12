@@ -71,8 +71,6 @@ font-size: 20px;
     flex: 1;
   }
   
-
-  
   .texto2 p{
   margin-top: 5px;
   margin-left: 25px;
@@ -81,8 +79,8 @@ font-size: 20px;
   }
 
 .btn{
-width: 560px;
-padding: 1px;
+  width: 560px;
+  padding: 1px;
 }
 
 @media (max-width: 768px) {
@@ -164,7 +162,7 @@ padding: 1px;
 /* Estilos para el título */
 .card-title {
   font-size: 1,2 rem;
-  margin-bottom: 10px; /* Espacio entre el título y la imagen */
+  margin-bottom: 10px; 
 }
 
 h5{
@@ -267,18 +265,8 @@ padding-top: 45px;
  }
 
  
-/*.video{
- display:inline-block;
- 
-  margin-top: 35px;
-  margin-left: 50px;
-  display: block;
-  width: 50%;
-  height: auto;
-  
-}*/
+
 .video {
- /*width: 648px; */
   height: 368px;
   margin: 35px 0 0 30px;
   display: block;
@@ -290,10 +278,18 @@ iframe {
   width: 100%;
 }
 
+@media only screen and (max-width: 480px) {
+  .video {
+    height: 200px;
+    margin: 10px;
+  }
+}
+
+
+
 
 .audio{
  display:inline-block;
-  /*margin-top: 5px;*/
  padding-top: 10px;
  margin-left: 100px;
  
@@ -429,7 +425,7 @@ margin: 20px  15px 20px 70px;
 }
   
   
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 700px)and (min-width: 400px) {
     table {
       table-layout: fixed;
       width: 100%;
@@ -440,9 +436,7 @@ margin: 20px  15px 20px 70px;
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    body {
-      overflow-x: hidden;
-    }
+   
   }
   
  
