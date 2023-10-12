@@ -268,18 +268,21 @@ padding-top: 45px;
 
  
 .video{
-  display:inline-block;
+ /* display:inline-block;*/
+ 
   margin-top: 35px;
-  margin-left: 230px;
+  margin-left: 100px;
+  
+  display: block;
   
 }
 
 .audio{
-  display:inline-block;
-  margin-top: 5px;
-  /*padding-left: 43px;*/
+ /*display:inline-block;
+  margin-top: 5px;*/
+ display:block;
   padding-top: 10px;
-
+margin-left: 100px;
 
 }
 table {
@@ -400,6 +403,7 @@ margin: 20px  15px 20px 70px;
  footer a:hover{
   background-color: var(--colormassuave);
  }
+
 @media screen and (max-width:700px){
 
   footer{
