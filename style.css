@@ -96,9 +96,6 @@ padding: 1px;
 }
 
 
-
-
-
 @media (max-width: 575px) {
   .container {
     flex-direction: column;
@@ -140,10 +137,6 @@ padding: 1px;
     width: auto;
   }
 }
-
-
-
-
 
  /*estilos para los card*/
  .container {
@@ -248,16 +241,12 @@ padding-top: 45px;
         justify-content: center;
       }
       
-      .parte1, .parte2 {
-        width: 480px;
-        height: 330px;
+ .parte1, .parte2 {
+    width: 480px;
+    height: 330px;
       }
     }
     
-
-
-
-
   ol{
     list-style-type: circle;
   }
@@ -281,11 +270,8 @@ padding-top: 45px;
 .video{
   display:inline-block;
   margin-top: 35px;
-  /*border:double 20px var(--colorvideo);*/
- 
-  margin-left: 43px;
-  /*margin-right: 25px;*/
-  /*margin-right: 40px;*/
+  margin-left: 230px;
+  
 }
 
 .audio{
@@ -298,17 +284,18 @@ padding-top: 45px;
 }
 table {
   margin-top: 50px;
-  margin-left: 25px;
+  margin-left: 100px;
   border-collapse:separate;
-  width: 50%;
+  width: 75%;
   margin-bottom: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  box-shadow: 0 15px 15px 0 var(--colorsombra);
 }
 
  th,td {
   text-align: left;
   padding: 10px;
+ 
   border: 1px solid black;
   vertical-align: botton;
 }
@@ -317,7 +304,7 @@ table {
   background-color: var(--colormassuave);
   color:var(--colorenlace);
   height: 70px;
-
+  white-space: nowrap;
 }
 
 tr:nth-child(even) {
@@ -371,7 +358,6 @@ margin-left: -2.3cm;
 
 
 .nav-primera{
-  
   background-color: var(--colorsuave);
   
   }
@@ -381,7 +367,6 @@ margin-left: -2.3cm;
   
   }
   
-
 
 @media screen and (max-width:700px){
 
@@ -394,14 +379,13 @@ margin-left: -2.3cm;
 }
 
  footer{
-background-color: var(--colorsuave);
-height: 70px;
-margin-top: 70px;
-display: flex;
-justify-content: start;
-  /*justify-content: left;*/
+  background-color: var(--colorsuave);
+  height: 70px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: start;
   align-items: left;
-}
+  }
 
 
  
@@ -422,18 +406,23 @@ margin: 20px  15px 20px 70px;
     flex-direction: row;
   }
 }
-  @media screen and (max-width:700px){
-
-    table{
-      flex-direction: column;
-    }
-  }
+  
+  
   @media screen and (max-width: 600px) {
+    table {
+      table-layout: fixed;
+      width: 100%;
+    }
     th, td {
-        display: block;
-        width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
+  
+ 
+  
+
 /*[type="radio"]{
 margin: 5px;
 }*/
