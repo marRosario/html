@@ -437,6 +437,9 @@ margin: 20px  15px 20px 70px;
       overflow: hidden;
       text-overflow: ellipsis;
     }
+    body {
+      overflow-x: hidden;
+    }
   }
   
  
