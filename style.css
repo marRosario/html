@@ -47,14 +47,14 @@ header{
 
  
 .informacion h3{
-text-align: center;
-font-size: 20px;
-margin-top: 25px;
-font-weight: bolder;
-}
+  text-align: center;
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: bolder;
+  }
   .informacion h3+h4{
-margin-top: 5px;
-font-size: 20px;
+  margin-top: 5px;
+  font-size: 20px;
 
   }
 
@@ -148,9 +148,7 @@ font-size: 20px;
   text-align:left;
   
 }
-
-
-/* Estilos para la imagen */
+   /* Estilos para la imagen */
 .card-img-top {
   object-fit: cover;
   width: 100%;
@@ -167,24 +165,24 @@ font-size: 20px;
 
 h5{
   display:block;
-text-align: center;
-margin-top: 55px;
-padding-top: 45px;
+  text-align: center;
+  margin-top: 55px;
+  padding-top: 45px;
 
 }
 
 
   /*hasta aca son los caar*/
  .flex-conteiner{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
   }
   
  .parte1{
-  background-color: white;
+    background-color: white;
     border-width: 1px;
     border-style: solid;
     list-style-type: circle;
@@ -285,16 +283,12 @@ iframe {
   }
 }
 
-
-
-
 .audio{
  display:inline-block;
  padding-top: 10px;
  margin-left: 100px;
- 
-
 }
+
 table {
   margin-top: 50px;
   margin-left: 15px;
@@ -310,17 +304,14 @@ table {
   padding: 5px;
   border: 1px solid black;
   vertical-align: botton;
- font-size: 14px;
+  font-size: 14px;
 }
-
 
  th {
   background-color: var(--colormassuave);
   color:var(--colorenlace);
   height: 40px;
   white-space: nowrap;
-
- 
 }
 
 tr:nth-child(even) {
@@ -333,18 +324,17 @@ tr:hover {
 
 .contac h2{
   margin: 20px;
-text-align: left;
+  text-align: left;
   
 }
 h2+p{
-margin:15px;
-color:var(--colorcontac);
-
+  margin:15px;
+  color:var(--colorcontac);
 }
 
 .form-check{
-margin-left: 75px;
-margin-top: 15px;
+  margin-left: 75px;
+  margin-top: 15px;
 
 }
 
@@ -358,9 +348,7 @@ margin-top: 15px;
 
 
 .custon-class{
-
-margin-top:20px;
-
+   margin-top:20px;
 }
 
 .row{
@@ -368,7 +356,7 @@ margin-top:20px;
   color: var(--colorcontac);
 }
 .second-row{
-margin-left: -2.3cm;
+  margin-left: -2.3cm;
   
 }
 
@@ -403,13 +391,11 @@ margin-left: -2.3cm;
   align-items: left;
   }
 
-
- 
  footer a{
-text-decoration: none;
-color: black;
-margin: 0 10 px;
-margin: 20px  15px 20px 70px;
+  text-decoration: none;
+  color: black;
+  margin: 0 10 px;
+  margin: 20px  15px 20px 70px;
 
  }
 
